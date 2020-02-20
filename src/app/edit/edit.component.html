@@ -1,0 +1,31 @@
+<div class="container">
+  <form #addForm="ngForm" (ngSubmit)="add(addForm)">
+    <p>Use the form below to update your profile.</p>
+    <label for="name">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="?como se llamas?"
+      ngModel
+    />
+    <label for="contact">Contact</label>
+    <input
+      type="text"
+      id="contact"
+      name="contact"
+      placeholder="Contact info?"
+      ngModel
+    />
+    <label for="bio">Bio</label>
+    <input
+      class="bio"
+      type="text"
+      id="bio"
+      name="bio"
+      placeholder="Say a few words!"
+      ngModel
+    />
+    <button>Submit</button>
+  </form>
+</div>
